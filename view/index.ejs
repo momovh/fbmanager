@@ -1,0 +1,48 @@
+<!-- FILEPATH: /workspaces/fbmanager/view/index.ejs -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Sidebar content -->
+            <h2>Menu</h2>
+            <!-- Add your menu items here -->
+            <% include menu.ejs %>
+        </div>
+        <div class="main">
+            <!-- Main content -->
+            <h1>List of Facebook Accounts</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Use JavaScript to populate the table with data from MongoDB -->
+                    <!-- BEGIN: JavaScript code -->
+                    <script>
+                        // Import the MongoDB configuration
+                        const config = require('../config/configdatabase.js');
+                        
+                        // Connect to MongoDB and retrieve the account data
+                        // Add your code here to fetch the account data from MongoDB
+                        
+                        // Loop through the account data and generate table rows
+                        // Add your code here to generate the table rows dynamically
+                        
+                    </script>
+                    <!-- END: JavaScript code -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
